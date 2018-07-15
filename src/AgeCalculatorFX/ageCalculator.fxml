@@ -33,15 +33,15 @@
             <Font size="18.0" />
           </font>
         </Label>
-        <Button fx:id="calcBtn" layoutX="287.0" layoutY="176.0" mnemonicParsing="false" onAction="#clickButton" text="Calculate" />
-        <TextField fx:id="inputTxt" alignment="CENTER" layoutX="245.0" layoutY="112.0" onMouseClicked="#clearTextField" text="YYYY-MM-DD" />
+        <TextField fx:id="inputTxt" alignment="CENTER" layoutX="245.0" layoutY="112.0" onKeyPressed="#calculateOnReturn" onMouseClicked="#clearTextField" text="YYYY-MM-DD" />
+        <Button fx:id="calcBtn" layoutX="287.0" layoutY="176.0" mnemonicParsing="false" onKeyPressed="#calculateOnReturn" onMouseClicked="#calculateOnClick" text="Calculate" />
         <Label fx:id="resultLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="249.0" prefHeight="27.0" prefWidth="484.0" textFill="#9f9f9f">
           <font>
             <Font size="18.0" />
           </font>
         </Label>
+            <Button fx:id="clearBtn" layoutX="449.0" layoutY="324.0" mnemonicParsing="false" onKeyPressed="#resetOnReturn" onMouseClicked="#resetOnClick" text="Reset" />
             <Button fx:id="closeBtn" layoutX="513.0" layoutY="324.0" mnemonicParsing="false" onAction="#close" text="Close" />
-            <Button fx:id="clearBtn" layoutX="449.0" layoutY="324.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
       </children>
     </AnchorPane>
   </children>
